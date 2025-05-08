@@ -54,7 +54,7 @@ def run_bot(config):
 
 # ---------------- GUI Logic ----------------
 def open_tutorial():
-    webbrowser.open("https://your-tutorial-link.com")
+    webbrowser.open("https://github.com/Apophatic/TWSNukeBot")
 
 def open_creator_page():
     webbrowser.open("https://guns.lol/tws1001")
