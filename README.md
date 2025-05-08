@@ -24,25 +24,15 @@ Download and install Python 3.10+ from:
 Make sure to check the box that says "Add Python to PATH" during installation.
 
 ✅ 2. Required Python Libraries
-Open a terminal (Command Prompt) and run this to install dependencies:
-
-bat
-Copy
-Edit
-@echo off
-python -m pip install --upgrade pip
-pip install discord.py
-Note: tkinter comes with Python by default on Windows. If it’s missing, reinstall Python and ensure the "tcl/tk" option is checked.
+Download the batch file named 'requirements' from the repository and run it
 
 ⚙️ Setup Instructions
 1. Clone or Download the Repository
 Click Code > Download ZIP or run:
 
-bash
-Copy
-Edit
 git clone https://github.com/YOUR_USERNAME/tws-nuke-bot.git
 cd tws-nuke-bot
+
 2. Create Your Discord Bot
 Go to the Discord Developer Portal
 
@@ -53,9 +43,7 @@ Give it a name (e.g., TWS Bot)
 Go to the Bot tab → Click "Add Bot"
 
 Enable the following Privileged Gateway Intents:
-
 Server Members Intent
-
 Message Content Intent
 
 Copy your bot token
@@ -92,30 +80,6 @@ Role Name
 Click Submit Configuration
 
 The bot will log in, create the resources, and spam the messages as configured.
-
-🛠 Optional: Install Everything with a Batch File
-You can install all dependencies using this included batch file:
-
-install_requirements.bat
-bat
-Copy
-Edit
-@echo off
-python --version || (
-    echo [!] Python is not installed.
-    pause
-    exit /b
-)
-python -m pip install --upgrade pip
-pip install discord.py
-python -c "import tkinter" || (
-    echo [!] tkinter is missing.
-    pause
-    exit /b
-)
-echo [*] All set!
-pause
-Run this once by double-clicking it.
 
 👨‍💻 Credits
 Made by TWS1001
